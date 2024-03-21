@@ -1,0 +1,9 @@
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.exe.config
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.exe
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.pdb
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.csproj.AssemblyReference.cache
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.Properties.Resources.resources
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.csproj.GenerateResource.cache
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.csproj.CoreCompileInputs.cache
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.exe
+C:\Users\rodolfo.lgouveia\source\repos\ChamadosTecnicosTec55\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.pdb

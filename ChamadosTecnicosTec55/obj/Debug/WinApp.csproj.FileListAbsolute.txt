@@ -1,0 +1,15 @@
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.exe.config
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.exe
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\ChamadosTecnicosTec55.pdb
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\Data.dll
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\System.Data.SqlClient.dll
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\Data.pdb
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\bin\Debug\System.Data.SqlClient.xml
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\WinApp.csproj.AssemblyReference.cache
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.Adicionar.frmAdicionarCliente.resources
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.Properties.Resources.resources
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\WinApp.csproj.GenerateResource.cache
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\WinApp.csproj.CopyComplete
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.exe
+C:\Users\rodolfo.lgouveia\source\repos\TecInfo55-main\ChamadosTecnicosTec55\obj\Debug\ChamadosTecnicosTec55.pdb
