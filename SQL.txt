@@ -1,0 +1,48 @@
+-- Banco de dados para o Sistema Chamados Técnicos 
+create database bd_Chamados_Tec55
+go
+
+use bd_Chamados_Tec55
+go
+
+-- Tabela Técnicos 
+create table Tecnicos(
+	CodigoTecnico int identity primary key,
+	Nome nvarchar(30),
+	Especialidade nvarchar(20),
+	Email nvarchar(100),
+	Senha nvarchar(50),
+	Obs nvarchar(max)
+)
+go
+
+create table Clientes(
+	CodigoCliente int identity primary key,
+	Nome nvarchar(30),
+	Profissao nvarchar(30),
+	Setor nvarchar(20),
+	Obs nvarchar(max)
+)
+go
+
+create table Chamados(
+	CodigoChamado int identity primary key,
+	DataSolicitacao datetime,
+	Ocorrencia nvarchar(30),
+	Problema nvarchar(30),
+	Concluido bit,
+	fk_Cliente_CodigoCliente int,
+	fk_Tecnicos_CodigoTecnico int
+)
+go
+
+-- Chaves Estrangeiras
+alter table Chamados add constraint fk_Chamados_Clientes
+	foreign key(fk_Cliente_CodigoCliente)
+	references Clientes (CodigoCliente)
+go
+
+alter table Chamados add constraint fk_Chamados_Tecnicos
+	foreign key(fk_Tecnicos_CodigoTecnico)
+	references Tecnicos (CodigoTecnico)
+go
