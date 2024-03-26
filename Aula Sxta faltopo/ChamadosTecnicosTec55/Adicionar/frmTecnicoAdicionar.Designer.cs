@@ -33,14 +33,14 @@
             this.txbObs = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txbSetor = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txbProfissao = new System.Windows.Forms.TextBox();
+            this.txbEspecialidade = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txbNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbSenha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnLimpar
@@ -51,6 +51,7 @@
             this.btnLimpar.TabIndex = 17;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSalvar
             // 
@@ -60,6 +61,7 @@
             this.btnSalvar.TabIndex = 16;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txbObs
             // 
@@ -89,12 +91,12 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Email";
             // 
-            // txbSetor
+            // txbEmail
             // 
-            this.txbSetor.Location = new System.Drawing.Point(12, 201);
-            this.txbSetor.Name = "txbSetor";
-            this.txbSetor.Size = new System.Drawing.Size(456, 20);
-            this.txbSetor.TabIndex = 13;
+            this.txbEmail.Location = new System.Drawing.Point(12, 201);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(456, 20);
+            this.txbEmail.TabIndex = 13;
             // 
             // label3
             // 
@@ -106,12 +108,12 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Especialidade";
             // 
-            // txbProfissao
+            // txbEspecialidade
             // 
-            this.txbProfissao.Location = new System.Drawing.Point(12, 148);
-            this.txbProfissao.Name = "txbProfissao";
-            this.txbProfissao.Size = new System.Drawing.Size(456, 20);
-            this.txbProfissao.TabIndex = 11;
+            this.txbEspecialidade.Location = new System.Drawing.Point(12, 148);
+            this.txbEspecialidade.Name = "txbEspecialidade";
+            this.txbEspecialidade.Size = new System.Drawing.Size(456, 20);
+            this.txbEspecialidade.TabIndex = 11;
             // 
             // label2
             // 
@@ -150,13 +152,13 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Senha";
             // 
-            // textBox1
+            // txbSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(456, 20);
-            this.textBox1.TabIndex = 20;
+            this.txbSenha.Location = new System.Drawing.Point(13, 255);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.Size = new System.Drawing.Size(456, 20);
+            this.txbSenha.TabIndex = 20;
             // 
             // frmTecnicoAdicionar
             // 
@@ -164,15 +166,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 423);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txbObs);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txbSetor);
+            this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txbProfissao);
+            this.Controls.Add(this.txbEspecialidade);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label1);
@@ -190,13 +192,13 @@
         private System.Windows.Forms.TextBox txbObs;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbSetor;
+        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbProfissao;
+        private System.Windows.Forms.TextBox txbEspecialidade;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbSenha;
     }
 }

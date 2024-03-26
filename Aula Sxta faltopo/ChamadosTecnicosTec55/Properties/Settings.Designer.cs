@@ -26,7 +26,7 @@ namespace ChamadosTecnicosTec55.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SJR0577169W10-1\\SQLEXPRESS;\nInitial Catalog=bd_Chamados_Tec55;\nIntegr" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SJR0577152W10-1\\SQLEXPRESS;\nInitial Catalog=bd_Chamados_Tec55;\nIntegr" +
             "ated Security=True")]
         public string Conexao {
             get {
