@@ -1,9 +1,0 @@
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\bin\Debug\Data.dll
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\bin\Debug\Data.pdb
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\bin\Debug\System.Data.SqlClient.dll
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\bin\Debug\System.Data.SqlClient.xml
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\obj\Debug\Data.csproj.AssemblyReference.cache
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\obj\Debug\Data.csproj.CopyComplete
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\obj\Debug\Data.dll
-C:\Users\wilhelm.smaia\source\repos\Chamados_Tecnico-main\Data\obj\Debug\Data.pdb
