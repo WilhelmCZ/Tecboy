@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.técnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestorDeChamadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestorDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmGestorDeChamados = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmGestorDeVendas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCalculadora = new System.Windows.Forms.ToolStripMenuItem();
             this.documentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharSoluçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +46,10 @@
             // 
             this.menuStrip.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
-            this.gestorDeChamadosToolStripMenuItem,
-            this.gestorDeVendasToolStripMenuItem,
-            this.calculadoraToolStripMenuItem,
+            this.tsmCadastro,
+            this.tsmGestorDeChamados,
+            this.tsmGestorDeVendas,
+            this.tsmCalculadora,
             this.documentaçãoToolStripMenuItem,
             this.sobreToolStripMenuItem,
             this.fecharSoluçãoToolStripMenuItem});
@@ -59,14 +59,14 @@
             this.menuStrip.TabIndex = 1;
             this.menuStrip.Text = "menuStrip1";
             // 
-            // cadastroToolStripMenuItem
+            // tsmCadastro
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
             this.técnicoToolStripMenuItem});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.tsmCadastro.Name = "tsmCadastro";
+            this.tsmCadastro.Size = new System.Drawing.Size(66, 20);
+            this.tsmCadastro.Text = "Cadastro";
             // 
             // clienteToolStripMenuItem
             // 
@@ -79,28 +79,30 @@
             // técnicoToolStripMenuItem
             // 
             this.técnicoToolStripMenuItem.Name = "técnicoToolStripMenuItem";
+            this.técnicoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.T)));
             this.técnicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.técnicoToolStripMenuItem.Text = "Técnico";
             this.técnicoToolStripMenuItem.Click += new System.EventHandler(this.técnicoToolStripMenuItem_Click);
             // 
-            // gestorDeChamadosToolStripMenuItem
+            // tsmGestorDeChamados
             // 
-            this.gestorDeChamadosToolStripMenuItem.Name = "gestorDeChamadosToolStripMenuItem";
-            this.gestorDeChamadosToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
-            this.gestorDeChamadosToolStripMenuItem.Text = "Gestor de Chamados";
+            this.tsmGestorDeChamados.Name = "tsmGestorDeChamados";
+            this.tsmGestorDeChamados.Size = new System.Drawing.Size(129, 20);
+            this.tsmGestorDeChamados.Text = "Gestor de Chamados";
+            this.tsmGestorDeChamados.Click += new System.EventHandler(this.tsmGestorDeChamados_Click);
             // 
-            // gestorDeVendasToolStripMenuItem
+            // tsmGestorDeVendas
             // 
-            this.gestorDeVendasToolStripMenuItem.Name = "gestorDeVendasToolStripMenuItem";
-            this.gestorDeVendasToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
-            this.gestorDeVendasToolStripMenuItem.Text = "Gestor de Vendas";
+            this.tsmGestorDeVendas.Name = "tsmGestorDeVendas";
+            this.tsmGestorDeVendas.Size = new System.Drawing.Size(109, 20);
+            this.tsmGestorDeVendas.Text = "Gestor de Vendas";
             // 
-            // calculadoraToolStripMenuItem
+            // tsmCalculadora
             // 
-            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.calculadoraToolStripMenuItem.Text = "Calculadora";
-            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
+            this.tsmCalculadora.Name = "tsmCalculadora";
+            this.tsmCalculadora.Size = new System.Drawing.Size(82, 20);
+            this.tsmCalculadora.Text = "Calculadora";
+            this.tsmCalculadora.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // documentaçãoToolStripMenuItem
             // 
@@ -147,12 +149,12 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmCadastro;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem técnicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestorDeChamadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestorDeVendasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmGestorDeChamados;
+        private System.Windows.Forms.ToolStripMenuItem tsmGestorDeVendas;
+        private System.Windows.Forms.ToolStripMenuItem tsmCalculadora;
         private System.Windows.Forms.ToolStripMenuItem documentaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharSoluçãoToolStripMenuItem;

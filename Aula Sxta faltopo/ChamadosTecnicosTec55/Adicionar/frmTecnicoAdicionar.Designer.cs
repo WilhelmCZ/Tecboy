@@ -179,7 +179,7 @@
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label1);
             this.Name = "frmTecnicoAdicionar";
-            this.Text = "frmTecnicoAdicionar";
+            this.Text = "TecnicoAdicionar";
             this.ResumeLayout(false);
             this.PerformLayout();
 

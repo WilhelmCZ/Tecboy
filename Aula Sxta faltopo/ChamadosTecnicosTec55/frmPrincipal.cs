@@ -21,7 +21,7 @@ namespace ChamadosTecnicosTec55
 
         private void fecharSoluçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var msgBox = MessageBox.Show("Quer mesmo Fechar?", "Sistema de Chamados", MessageBoxButtons.YesNo);
+            var msgBox = MessageBox.Show("Quer mesmo Fechar?", "Sistema de Chamados", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
                 
             if (msgBox == DialogResult.Yes)
             {
@@ -51,14 +51,28 @@ namespace ChamadosTecnicosTec55
 
         private void técnicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmTecnicoAdicionar TelaTecnico = new frmTecnicoAdicionar();
-            TelaTecnico.ShowDialog();
+            //var TelaTecnico = new frmTecnicoAdicionar();
+            //TelaTecnico.MdiParent = this;
+            //TelaTecnico.Show();
         }
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAdicionarCliente TelaCliente = new frmAdicionarCliente();
-            TelaCliente.ShowDialog();
+            //var TelaCliente = new frmAdicionarCliente();
+            //define o formulario pai
+            //TelaCliente.MdiParent = this;
+            //TelaCliente.Show();
+            //mdi deixa ele criar uma tela dentro da tela (mdi = a parte cinza do design) e bem difetende do
+            //TelaClinete.ShowDialog.;.
+
+        }
+
+        private void tsmGestorDeChamados_Click(object sender, EventArgs e)
+        {
+            var TelaGestor = new frmTecnicoAdicionar();
+            TelaGestor.MdiParent = this;
+            TelaGestor.Show();
+            
         }
     }
 }
