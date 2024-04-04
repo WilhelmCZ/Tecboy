@@ -74,12 +74,14 @@
             this.clienteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // técnicoToolStripMenuItem
             // 
             this.técnicoToolStripMenuItem.Name = "técnicoToolStripMenuItem";
             this.técnicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.técnicoToolStripMenuItem.Text = "Técnico";
+            this.técnicoToolStripMenuItem.Click += new System.EventHandler(this.técnicoToolStripMenuItem_Click);
             // 
             // gestorDeChamadosToolStripMenuItem
             // 

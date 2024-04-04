@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChamadosTecnicosTec55.Adicionar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,18 @@ namespace ChamadosTecnicosTec55
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("calc");
+        }
+
+        private void técnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTecnicoAdicionar TelaTecnico = new frmTecnicoAdicionar();
+            TelaTecnico.ShowDialog();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdicionarCliente TelaCliente = new frmAdicionarCliente();
+            TelaCliente.ShowDialog();
         }
     }
 }
