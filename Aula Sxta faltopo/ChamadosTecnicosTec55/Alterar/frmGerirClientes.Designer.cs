@@ -62,6 +62,7 @@
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnIncluir
             // 
@@ -90,6 +91,7 @@
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // label1
             // 
@@ -125,6 +127,7 @@
             this.Controls.Add(this.dataGridCliente);
             this.Name = "frmGerirClientes";
             this.Text = "GerirClientes";
+            this.Load += new System.EventHandler(this.frmGerirClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

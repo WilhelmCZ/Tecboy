@@ -1,4 +1,5 @@
 ﻿using ChamadosTecnicosTec55.Adicionar;
+using ChamadosTecnicosTec55.Alterar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -73,6 +74,13 @@ namespace ChamadosTecnicosTec55
             TelaGestor.MdiParent = this;
             TelaGestor.Show();
             
+        }
+
+        private void tsmGestorDeClientes_Click(object sender, EventArgs e)
+        {
+            var TelaGerirCliente = new frmGerirClientes();
+            TelaGerirCliente.MdiParent = this;
+            TelaGerirCliente.Show();
         }
     }
 }

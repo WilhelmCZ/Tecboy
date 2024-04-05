@@ -35,7 +35,7 @@ namespace ChamadosTecnicosTec55.Adicionar
             Cliente cliente = new Cliente();
             ClienteDao clientedao = new ClienteDao(_conexao);
 
-            if(string.IsNullOrWhiteSpace(txbNome.Text) || string.IsNullOrWhiteSpace(txbObs.Text) || string.IsNullOrWhiteSpace(txbProfissao.Text) || string.IsNullOrWhiteSpace(txbSetor.Text))
+            if(string.IsNullOrWhiteSpace(txbNome.Text) || string.IsNullOrWhiteSpace(txbProfissao.Text) || string.IsNullOrWhiteSpace(txbSetor.Text))
             {
                 MessageBox.Show("CADE OS DADOSSS ??");
             }
@@ -65,6 +65,7 @@ namespace ChamadosTecnicosTec55.Adicionar
                                     MessageBoxIcon.Error);
                 }
             }
+            
         }
     }
 }
