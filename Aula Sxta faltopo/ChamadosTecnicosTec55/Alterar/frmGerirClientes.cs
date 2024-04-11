@@ -62,5 +62,26 @@ namespace ChamadosTecnicosTec55.Alterar
         {
             dataGridCliente.Rows.RemoveAt(dataGridCliente.CurrentRow.Cells[0].RowIndex);
         }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            // Verifique se alguma linha esta selecionada no DataGridView
+            if(dataGridCliente.SelectedRows.Count > 0)
+            {
+                // obtem o codigo do cliente da linha selecionada
+                int codigo = Convert.ToInt32(dataGridCliente.CurrentRow.Cells[0].Value);
+
+                var Alterar = new frmAlternar(codigo);
+                Alterar.ShowDialog();
+
+                // apos a tela fechar listar os clientes cadastrados
+                ListarCliente();
+            }
+            else
+            {
+                // Exibe uma mensagem de Aviso se Nenhuma Linha Estiver Selecionada
+                MessageBox.Show("Escolhe Uma Linha Burro", "Tribufu", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            };
+        }
     }
 }

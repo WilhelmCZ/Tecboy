@@ -37,7 +37,7 @@ namespace ChamadosTecnicosTec55.Adicionar
 
             if(string.IsNullOrWhiteSpace(txbNome.Text) || string.IsNullOrWhiteSpace(txbProfissao.Text) || string.IsNullOrWhiteSpace(txbSetor.Text))
             {
-                MessageBox.Show("CADE OS DADOSSS ??");
+                MessageBox.Show("Donde esta el Dados");
             }
             else
             {

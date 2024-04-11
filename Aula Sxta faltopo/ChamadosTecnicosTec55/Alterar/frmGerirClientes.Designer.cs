@@ -41,9 +41,12 @@
             // 
             // dataGridCliente
             // 
+            this.dataGridCliente.AllowUserToAddRows = false;
+            this.dataGridCliente.AllowUserToDeleteRows = false;
             this.dataGridCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridCliente.Location = new System.Drawing.Point(23, 51);
             this.dataGridCliente.Name = "dataGridCliente";
+            this.dataGridCliente.ReadOnly = true;
             this.dataGridCliente.Size = new System.Drawing.Size(637, 364);
             this.dataGridCliente.TabIndex = 0;
             // 
@@ -82,6 +85,7 @@
             this.btnAlterar.TabIndex = 4;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
