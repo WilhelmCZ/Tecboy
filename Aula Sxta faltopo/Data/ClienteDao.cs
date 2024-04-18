@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data; // ADO.net
-using System.Data.SqlClient; // ADO para SQL SERVER
+using System.Data.SqlClient;
+using System.Security.Permissions; // ADO para SQL SERVER
 
 namespace Data
 {
@@ -68,6 +69,70 @@ namespace Data
             }catch (Exception ex)
             {
                 throw new Exception($"Erro ao buscar Clientes: {ex.Message}");
+            }
+        }
+
+        public Cliente ObtemCliente (int codigoCliente)
+        {
+            // Defini o sql para obter o cliente 
+            const string query = @"select * from Clientes where CodigoCliente =@CodigoCliente";
+
+            Cliente cliente = null;
+
+            try
+            {
+                using (var conexaobd = new SqlConnection(_conexao))
+                using(var comando = new SqlCommand( query, conexaobd))
+                {
+                    comando.Parameters.AddWithValue("@CodigoCliente", codigoCliente);
+                    conexaobd.Open();
+                    using (var reader = comando.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            cliente = new Cliente
+                            {
+                                CodigoCliente = Convert.ToInt32(reader["CodigoCliente"]),
+                                Nome = reader["Nome"].ToString(),
+                                Profissao = reader["Profissao"].ToString(),
+                                Obs = reader["Obs"].ToString(),
+                                Setor = reader["Setor"].ToString(),
+                            };
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao obter ao cliente{ex.Message}", ex);
+            }
+            return cliente;
+        }
+
+        public void AlterarCliente(Cliente cliente)
+        {
+            const string query = @"update Clientes set Nome=@Nome, Setor = @Setor, Profissao = @Profissao, Obs = @Obs where CodigoCliente = @CodCliente";
+
+            try
+            {
+                using (var conexaoBd = new SqlConnection(_conexao))
+                using (var comando = new SqlCommand(query, conexaoBd))
+                {
+                    comando.Parameters.AddWithValue("@Nome", cliente.Nome);
+                    comando.Parameters.AddWithValue("@Setor", cliente.Setor);
+                    comando.Parameters.AddWithValue("@Profissao", cliente.Profissao);
+                    comando.Parameters.AddWithValue("@Obs", cliente.Obs);
+                    comando.Parameters.AddWithValue("@CodCliente", cliente.CodigoCliente);
+
+                    conexaoBd.Open();
+                    comando.ExecuteNonQuery();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro{ex}");
             }
         }
     }

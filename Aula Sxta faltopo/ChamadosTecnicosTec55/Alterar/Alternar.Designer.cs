@@ -122,12 +122,13 @@
             // 
             // btnAltOk
             // 
-            this.btnAltOk.Location = new System.Drawing.Point(114, 283);
+            this.btnAltOk.Location = new System.Drawing.Point(114, 292);
             this.btnAltOk.Name = "btnAltOk";
             this.btnAltOk.Size = new System.Drawing.Size(89, 49);
             this.btnAltOk.TabIndex = 11;
             this.btnAltOk.Text = "OK";
             this.btnAltOk.UseVisualStyleBackColor = true;
+            this.btnAltOk.Click += new System.EventHandler(this.btnAltOk_Click);
             // 
             // txbAltCodigo
             // 
