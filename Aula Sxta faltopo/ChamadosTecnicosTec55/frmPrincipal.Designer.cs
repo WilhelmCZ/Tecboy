@@ -33,7 +33,7 @@
             this.tsmCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.técnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGestorDeChamados = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmGestorDeTecnico = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmGestorDeClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCalculadora = new System.Windows.Forms.ToolStripMenuItem();
             this.documentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,7 @@
             this.menuStrip.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmCadastro,
-            this.tsmGestorDeChamados,
+            this.tsmGestorDeTecnico,
             this.tsmGestorDeClientes,
             this.tsmCalculadora,
             this.documentaçãoToolStripMenuItem,
@@ -84,12 +84,12 @@
             this.técnicoToolStripMenuItem.Text = "Técnico";
             this.técnicoToolStripMenuItem.Click += new System.EventHandler(this.técnicoToolStripMenuItem_Click);
             // 
-            // tsmGestorDeChamados
+            // tsmGestorDeTecnico
             // 
-            this.tsmGestorDeChamados.Name = "tsmGestorDeChamados";
-            this.tsmGestorDeChamados.Size = new System.Drawing.Size(129, 20);
-            this.tsmGestorDeChamados.Text = "Gestor de Chamados";
-            this.tsmGestorDeChamados.Click += new System.EventHandler(this.tsmGestorDeChamados_Click);
+            this.tsmGestorDeTecnico.Name = "tsmGestorDeTecnico";
+            this.tsmGestorDeTecnico.Size = new System.Drawing.Size(117, 20);
+            this.tsmGestorDeTecnico.Text = "Gestor de Tecnicos";
+            this.tsmGestorDeTecnico.Click += new System.EventHandler(this.tsmGestorDeChamados_Click);
             // 
             // tsmGestorDeClientes
             // 
@@ -153,7 +153,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmCadastro;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem técnicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmGestorDeChamados;
+        private System.Windows.Forms.ToolStripMenuItem tsmGestorDeTecnico;
         private System.Windows.Forms.ToolStripMenuItem tsmGestorDeClientes;
         private System.Windows.Forms.ToolStripMenuItem tsmCalculadora;
         private System.Windows.Forms.ToolStripMenuItem documentaçãoToolStripMenuItem;

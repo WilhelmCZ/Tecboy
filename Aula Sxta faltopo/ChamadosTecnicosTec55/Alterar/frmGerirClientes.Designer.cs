@@ -36,6 +36,8 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnExcluirTD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@
             // 
             // btnIncluir
             // 
-            this.btnIncluir.Location = new System.Drawing.Point(683, 253);
+            this.btnIncluir.Location = new System.Drawing.Point(683, 216);
             this.btnIncluir.Name = "btnIncluir";
             this.btnIncluir.Size = new System.Drawing.Size(101, 47);
             this.btnIncluir.TabIndex = 3;
@@ -79,7 +81,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(683, 174);
+            this.btnAlterar.Location = new System.Drawing.Point(683, 146);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(101, 47);
             this.btnAlterar.TabIndex = 4;
@@ -89,7 +91,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(683, 93);
+            this.btnExcluir.Location = new System.Drawing.Point(683, 80);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 47);
             this.btnExcluir.TabIndex = 5;
@@ -116,11 +118,33 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Gerir Cliente";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(683, 47);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(24, 23);
+            this.btnRefresh.TabIndex = 8;
+            this.btnRefresh.Text = "R";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnExcluirTD
+            // 
+            this.btnExcluirTD.Location = new System.Drawing.Point(683, 286);
+            this.btnExcluirTD.Name = "btnExcluirTD";
+            this.btnExcluirTD.Size = new System.Drawing.Size(101, 46);
+            this.btnExcluirTD.TabIndex = 9;
+            this.btnExcluirTD.Text = "Excluir Tudo";
+            this.btnExcluirTD.UseVisualStyleBackColor = true;
+            this.btnExcluirTD.Click += new System.EventHandler(this.btnExcluirTD_Click);
+            // 
             // frmGerirClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExcluirTD);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExcluir);
@@ -148,5 +172,7 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnExcluirTD;
     }
 }

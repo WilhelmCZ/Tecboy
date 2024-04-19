@@ -70,9 +70,9 @@ namespace ChamadosTecnicosTec55
 
         private void tsmGestorDeChamados_Click(object sender, EventArgs e)
         {
-            var TelaGestor = new frmTecnicoAdicionar();
-            TelaGestor.MdiParent = this;
-            TelaGestor.Show();
+            var TelaGerirTecnico = new frmGerirTecnicos();
+            TelaGerirTecnico.MdiParent = this;
+            TelaGerirTecnico.Show();
             
         }
 

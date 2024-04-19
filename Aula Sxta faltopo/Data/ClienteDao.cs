@@ -135,5 +135,64 @@ namespace Data
                 throw new Exception($"Erro{ex}");
             }
         }
+        public void ExcluirCliente(int codigoCliente)
+        {
+            const string query = @"delete from Clientes Where CodigoCliente = @CodigoCliente";
+
+            try
+            {
+                using(var conexaoBd = new SqlConnection(_conexao))
+                using(var comando = new SqlCommand( query , conexaoBd))
+                {
+                    comando.Parameters.AddWithValue("@CodigoCliente", codigoCliente);
+                    conexaoBd.Open();
+                    comando.ExecuteNonQuery();
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception($"Erro ao excluir{ex.Message}");
+            }
+        }
+
+        public void ExcluirTdCliente(int codigoCliente)
+        {
+            //const string query = @"delete from Clientes Where CodigoCliente = @CodigoCliente";
+            const string query = @"  delete from Clientes
+                                     declare @maxId int
+                                     select @maxId = isnull(max(CodigoCliente), 0) from Clientes
+                                     dbcc checkident ('Clientes', reseed, @maxId)";
+            Cliente cliente = null;
+            try
+            {
+                using (var conexaobd = new SqlConnection(_conexao))
+                using (var comando = new SqlCommand(query, conexaobd))
+                {
+                    comando.Parameters.AddWithValue("@CodigoCliente", codigoCliente);
+                    conexaobd.Open();
+                    using (var reader = comando.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            cliente = new Cliente
+                            {
+                                CodigoCliente = Convert.ToInt32(reader["CodigoCliente"]),
+                                Nome = reader["Nome"].ToString(),
+                                Profissao = reader["Profissao"].ToString(),
+                                Obs = reader["Obs"].ToString(),
+                                Setor = reader["Setor"].ToString(),
+                            };
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao obter ao cliente{ex.Message}", ex);
+            }
+            
+        }
+
     }
 }

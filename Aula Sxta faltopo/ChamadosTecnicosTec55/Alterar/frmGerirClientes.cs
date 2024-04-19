@@ -45,6 +45,8 @@ namespace ChamadosTecnicosTec55.Alterar
             var TelaCliente = new frmAdicionarCliente();
             
             TelaCliente.Show();
+
+            ListarCliente();
         }
 
         private void frmGerirClientes_Load(object sender, EventArgs e)
@@ -54,13 +56,39 @@ namespace ChamadosTecnicosTec55.Alterar
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            ListarCliente();
-            txbPesquisar.Focus();
+            if(txbPesquisar.Text != string.Empty)
+            {
+                ListarCliente();
+                //txbPesquisar.Text = String.Empty;
+                txbPesquisar.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Digite algo Para Pesquisar","Pesquisar",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            dataGridCliente.Rows.RemoveAt(dataGridCliente.CurrentRow.Cells[0].RowIndex);
+           //Botao excluir
+           //selecionar data grid capturar ID, enviar para o DAO,excluir
+           if(dataGridCliente.SelectedRows.Count > 0)
+            {
+                int codigo = Convert.ToInt32(dataGridCliente.CurrentRow.Cells[0].Value);
+
+                var resultado = MessageBox.Show("Deseja Excluir?", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+                if(resultado == DialogResult.Yes)
+                {
+                    ClienteDao clienteDao = new ClienteDao(_conexao);
+                    clienteDao.ExcluirCliente(codigo);
+                    ListarCliente();
+                }
+            }
+           else
+            {
+                MessageBox.Show("Selecione um Registro !");
+            }
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -71,7 +99,7 @@ namespace ChamadosTecnicosTec55.Alterar
                 // obtem o codigo do cliente da linha selecionada
                 int codigo = Convert.ToInt32(dataGridCliente.CurrentRow.Cells[0].Value);
 
-                var Alterar = new frmAlternar(codigo);
+                var Alterar = new frmAlternarCli(codigo);
                 Alterar.ShowDialog();
 
                 // apos a tela fechar listar os clientes cadastrados
@@ -82,6 +110,27 @@ namespace ChamadosTecnicosTec55.Alterar
                 // Exibe uma mensagem de Aviso se Nenhuma Linha Estiver Selecionada
                 MessageBox.Show("Escolhe Uma Linha Burro", "Tribufu", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             };
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            ListarCliente();
+        }
+
+        private void btnExcluirTD_Click(object sender, EventArgs e)
+        {
+           
+                int codigo = Convert.ToInt32(dataGridCliente.CurrentRow.Cells[0].Value);
+
+                var resultado = MessageBox.Show("Deseja Excluir?", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    ClienteDao clienteDao = new ClienteDao(_conexao);
+                    clienteDao.ExcluirTdCliente(codigo);
+                    ListarCliente();
+                }
+                       
         }
     }
 }

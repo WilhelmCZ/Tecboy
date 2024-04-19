@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace ChamadosTecnicosTec55.Alterar
 {
-    public partial class frmAlternar : Form
+    public partial class frmAlternarCli : Form
     {
         string _conexao = ChamadosTecnicosTec55.Properties.Settings.Default.Conexao;
-        public frmAlternar(int codigo)
+        public frmAlternarCli(int codigo)
         {
             InitializeComponent();
             //verifica se o codigo e maior que zero

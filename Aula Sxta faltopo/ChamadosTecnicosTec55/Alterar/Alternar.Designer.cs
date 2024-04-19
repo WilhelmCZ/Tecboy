@@ -1,6 +1,6 @@
 ﻿namespace ChamadosTecnicosTec55.Alterar
 {
-    partial class frmAlternar
+    partial class frmAlternarCli
     {
         /// <summary>
         /// Required designer variable.
@@ -139,7 +139,7 @@
             this.txbAltCodigo.TabIndex = 10;
             this.txbAltCodigo.TextChanged += new System.EventHandler(this.txbAltCodigo_TextChanged);
             // 
-            // frmAlternar
+            // frmAlternarCli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,8 +155,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmAlternar";
-            this.Text = "Alternar";
+            this.Name = "frmAlternarCli";
+            this.Text = "AlternarCliente";
             this.Load += new System.EventHandler(this.Alternar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
